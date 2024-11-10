@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.17227f85.css",
-    "main.js": "/static/js/main.e65f8ab8.js",
+    "main.js": "/static/js/main.5d925f5d.js",
     "static/media/rumanSquare.png": "/static/media/rumanSquare.5f36cc426a9ca604dba7.png",
     "static/media/cv.pdf": "/static/media/cv.d0a8429f646b5110c06e.pdf",
     "static/media/uno_logo.png": "/static/media/uno_logo.a653f4c8e13b53f5aa80.png",
@@ -9,10 +9,10 @@
     "static/media/sust_logo.png": "/static/media/sust_logo.eeb63bc8228b6913d740.png",
     "index.html": "/index.html",
     "main.17227f85.css.map": "/static/css/main.17227f85.css.map",
-    "main.e65f8ab8.js.map": "/static/js/main.e65f8ab8.js.map"
+    "main.5d925f5d.js.map": "/static/js/main.5d925f5d.js.map"
   },
   "entrypoints": [
     "static/css/main.17227f85.css",
-    "static/js/main.e65f8ab8.js"
+    "static/js/main.5d925f5d.js"
   ]
 }
