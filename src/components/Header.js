@@ -9,7 +9,7 @@ import './Header.css';  // Importing the styles
 function Header() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
-  const sectionIds = ['home', 'about', 'skills', 'experience', 'portfolio', 'contact'];
+  const sectionIds = ['home', 'about', 'education', 'experience', 'portfolio', 'skills'];
 
   useEffect(() => {
     const handleScroll = () => {

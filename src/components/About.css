@@ -16,56 +16,6 @@ ul {
   border-radius: var(--border-radius-medium);
 }
 
-/* Education Section Styling */
-.education-container {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-medium);
-  max-width: 800px;
-  width: 100%;
-}
-
-.education-item {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-small);
-  padding: var(--spacing-small);
-  background-color: var(--secondary-bg-color);
-  border-radius: var(--border-radius-medium);
-  box-shadow: var(--shadow-medium);
-  text-align: left;
-}
-
-.education-logo {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  border-radius: var(--border-radius-small);
-}
-
-.education-details {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-xs);
-  align-items: flex-start;
-}
-
-.education-details h3 {
-  font-size: var(--font-size-medium);
-  /* font-weight: bold; */
-  margin: 0;
-  color: var(--text-color);
-  text-align: left;
-}
-
-.education-details .degree,
-.education-details .dates {
-  font-size: var(--font-size-small);
-  color: var(--muted-text-color);
-  margin: 0;
-  text-align: left;
-}
-
 /* Social Icons Styling */
 .contact-info {
   margin-top: var(--spacing-medium);
@@ -98,17 +48,6 @@ ul {
 
 /* Responsive Adjustments for Mobile Screens */
 @media (max-width: 768px) {
-  .education-item {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .education-logo {
-    width: 40px;
-    height: 40px;
-  }
-
   .social-icons {
     justify-content: center;
     flex-wrap: wrap;

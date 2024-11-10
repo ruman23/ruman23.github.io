@@ -92,7 +92,7 @@ section {
 }
 
 /* Section-specific Styling */
-#home, #skills, #portfolio, #contact {
+#home, #skills, #portfolio, #education {
   background-color: var(--bg-color);
 }
 

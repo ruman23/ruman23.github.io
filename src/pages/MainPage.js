@@ -5,7 +5,7 @@ import About from '../components/About';
 import Skills from '../components/Skills';
 import Experience from '../components/Experience';
 import Portfolio from '../components/Portfolio';
-import Contact from '../components/Contact';
+import Education from '../components/Education';
 
 function MainPage() {
   return (
@@ -24,7 +24,7 @@ function MainPage() {
         </div>
         <div className="row">
           <div className="col-12">
-            <Skills />        {/* Skills section */}
+            <Education />       {/* Education section */}
           </div>
         </div>
         <div className="row">
@@ -39,7 +39,7 @@ function MainPage() {
         </div>
         <div className="row">
           <div className="col-12">
-            <Contact />       {/* Contact section */}
+            <Skills />        {/* Skills section */}
           </div>
         </div>
       </div>

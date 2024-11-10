@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import rumanSquare from '../assets/rumanSquare.png';
+import rumanSquare from '../assets/rumanSquare.webp';
 
 function Home() {
   return (
