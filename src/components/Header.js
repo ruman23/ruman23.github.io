@@ -24,10 +24,16 @@ function Header() {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      const headerHeight = document.querySelector('header').offsetHeight;
+      const sectionTop = section.offsetTop - headerHeight;
+      window.scrollTo({
+        top: sectionTop,
+        behavior: 'smooth'
+      });
     }
     setMenuOpen(false); // Close the menu on mobile after clicking
   };
+  
 
   const renderCircles = () => {
     return sectionIds.map((id, index) => {

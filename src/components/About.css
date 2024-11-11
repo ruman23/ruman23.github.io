@@ -40,25 +40,17 @@ ul {
 
 
 /* Social Icons Styling */
-.contact-info {
-  margin-top: var(--spacing-medium);
-  text-align: center;
-}
-
-.contact-info p {
-  font-size: var(--font-size-base);
-  color: var(--muted-text-color);
-}
-
 .social-icons {
   display: flex;
   gap: var(--spacing-medium);
   margin-top: var(--spacing-small);
+  position: relative;
 }
 
 .social-icons li {
   font-size: var(--font-size-xl);
   margin: var(--spacing-medium);
+  position: relative;
 }
 
 .social-icons li a {
@@ -68,6 +60,56 @@ ul {
 .social-icons li a:hover {
   color: var(--text-color);
 }
+
+/* Tooltip styling */
+.social-icons li a::after {
+  content: attr(title); /* This will use the title attribute as tooltip text */
+  position: absolute;
+  bottom: 100%; /* Position tooltip above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--text-color);
+  color: var(--secondary-bg-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: var(--font-size-small);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.social-icons li a:hover::after {
+  opacity: 1;
+}
+
+
+/* Styling for clickable email */
+.clickable-email {
+  cursor: pointer;
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.clickable-email:hover {
+  color: var(--hover-color);
+}
+
+/* Styling for the copy confirmation message */
+.copy-message {
+  font-size: var(--font-size-small);
+  color: var(--text-color); /* Text color */
+  background-color: var(--bg-color); /* Background color for the success message */
+  margin-bottom: var(--spacing-small); /* Adds space below the message */
+  text-align: center;
+  font-weight: bold; /* Optional: make the message bold */
+  padding: 6px 12px; /* Padding for better spacing */
+  border-radius: 4px; /* Rounded corners */
+  display: inline-block; /* Makes the background color wrap around the text */
+}
+
+
 
 /* Responsive Adjustments for Mobile Screens */
 @media (max-width: 768px) {

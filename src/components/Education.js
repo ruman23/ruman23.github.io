@@ -23,8 +23,8 @@ function Education() {
           <img src={unoLogo} alt="UNO Logo" className="education-logo" />
           <div className="education-details">
             <h3>University of Nebraska Omaha (UNO)</h3>
-            <p className="degree">Master of Science (M.Sc.), Computing & Information Science</p>
-            <p className="dates">Aug. 2022 - Present</p>
+            <p className="degree">Master of Science (M.Sc.), Computer Science</p>
+            <p className="dates">Aug. 2022 - Expected Graduation: Dec. 2024</p>
           </div>
         </div>
 
