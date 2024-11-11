@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.37e6d610.css",
-    "main.js": "/static/js/main.50eca63c.js",
-    "static/media/rumanSquare.png": "/static/media/rumanSquare.5f36cc426a9ca604dba7.png",
+    "main.css": "/static/css/main.dae525a8.css",
+    "main.js": "/static/js/main.18a708fe.js",
+    "static/media/rumanSquare.webp": "/static/media/rumanSquare.6387d820820e2b4fb8b6.webp",
     "static/media/cv.pdf": "/static/media/cv.d0a8429f646b5110c06e.pdf",
     "static/media/uno_logo.png": "/static/media/uno_logo.a653f4c8e13b53f5aa80.png",
     "static/media/samsung_logo.png": "/static/media/samsung_logo.27a04fee8d4a4d941f86.png",
     "static/media/sust_logo.png": "/static/media/sust_logo.eeb63bc8228b6913d740.png",
     "index.html": "/index.html",
-    "main.37e6d610.css.map": "/static/css/main.37e6d610.css.map",
-    "main.50eca63c.js.map": "/static/js/main.50eca63c.js.map"
+    "main.dae525a8.css.map": "/static/css/main.dae525a8.css.map",
+    "main.18a708fe.js.map": "/static/js/main.18a708fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.37e6d610.css",
-    "static/js/main.50eca63c.js"
+    "static/css/main.dae525a8.css",
+    "static/js/main.18a708fe.js"
   ]
 }

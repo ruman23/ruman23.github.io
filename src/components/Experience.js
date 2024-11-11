@@ -49,12 +49,12 @@ const Experience = () => {
                 <p className="duration">{exp.duration}</p>
               </div>
             </div>
-            <p className="description">{exp.description}</p>
+            {/* <p className="description">{exp.description}</p>
             <ul className="tasks">
               {exp.tasks.map((task, idx) => (
                 <li key={idx}>{task}</li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         ))}
       </div>

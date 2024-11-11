@@ -6,8 +6,8 @@
   flex-direction: column;
   align-items: center;
   /* background-color: var(--secondary-bg-color); */
-  background-color: red;
-  border-radius: var(--border-radius-medium);
+  background-color: var(--secondary-bg-color);
+  /* border-radius: var(--border-radius-medium); */
   text-align: center;
   gap: var(--spacing-small); /* Small gap for a tighter layout */
 }

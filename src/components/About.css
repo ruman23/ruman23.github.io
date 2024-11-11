@@ -1,9 +1,26 @@
 /* Global Reset for All Unordered Lists */
+.research-interests {
+  max-width: var(--max-width-container);
+  font-size: var(--font-size-medium);
+  color: var(--text-color);
+  line-height: var(--line-height-large);
+}
+
 ul {
-  list-style: none; /* Ensures there are no bullet points or dots */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
+
+.research-interests li {
+  padding: var(--spacing-small) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.research-interests li:last-child {
+  border-bottom: none;
+}
+
 
 /* About Section Styling */
 #about {
@@ -13,8 +30,14 @@ ul {
   flex-direction: column;
   align-items: center;
   background-color: var(--secondary-bg-color);
-  border-radius: var(--border-radius-medium);
+  /* border-radius: var(--border-radius-medium); */
 }
+
+.highlighted-name {
+  font-size: 1.5em; /* Adjust as needed */
+  font-weight: bold;
+}
+
 
 /* Social Icons Styling */
 .contact-info {

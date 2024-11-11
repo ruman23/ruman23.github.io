@@ -11,15 +11,17 @@ function About() {
   return (
     <section id="about">
       <h1>About Me</h1>
-      <p>
-      I'm <strong>Md Ruman Islam</strong>, a Ph.D. student in Computing & Information Science at the University of Nebraska Omaha. My research focuses on cybersecurity, cyber-physical systems, IoT, and machine learning. I also have industry experience as a Software Engineer at Samsung R&D Institute.
+      <p>I am <span className="highlighted-name">Md Ruman Islam</span>, a Ph.D. student in Computing & Information Science (CIS) at the 
+        &nbsp;<a href="https://www.unomaha.edu">University of Nebraska Omaha</a>,&nbsp; the supervision of 
+        &nbsp;<a href="https://unocps.github.io">Dr. Pei-Chi Huang</a>.&nbsp; My research spans Cybersecurity, Cyber-Physical Systems, and Machine Learning. 
+        Alongside my academic pursuits, I have industry experience as a Software Engineer at
+        &nbsp;<a href="https://research.samsung.com/srbd">Samsung R&D Institute</a>.
       </p>
 
       <h2>Research Interests</h2>
       <ul className="research-interests">
         <li>Cybersecurity</li>
         <li>Cyber-Physical Systems</li>
-        <li>Internet of Things (IoT)</li>
         <li>Machine Learning</li>
       </ul>
 
