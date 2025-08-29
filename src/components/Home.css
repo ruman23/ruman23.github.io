@@ -1,0 +1,18 @@
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+  margin-top: 65px;
+    border-top: 2px solid var(--border-color);
+
+  /* Round top corners */
+  border-top-left-radius: var(--border-radius-medium);
+  border-top-right-radius: var(--border-radius-medium);
+}
+#home {
+  background-color: var(--secondary-bg-color);
+}

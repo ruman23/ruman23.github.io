@@ -1,0 +1,141 @@
+/* Global Styles */
+:root {
+  /* Color Palette */
+  --bg-color: #121212;                  /* Primary background color */
+  --secondary-bg-color: #1e1e1e;        /* Secondary background color */
+  --text-color: #e0e0e0;                /* Primary text color */
+  --muted-text-color: #888888;          /* Muted/secondary text color */
+  --primary-color: #82b1ff;             /* Accent color for links/buttons */
+  --border-color: rgba(255, 255, 255, 0.1); /* Border/shadow color */
+
+  /* Font Sizes */
+  --font-size-xs: 12px;                 /* Extra small text */
+  --font-size-small: 14px;              /* Small text */
+  --font-size-base: 16px;               /* Base text */
+  --font-size-medium: 18px;             /* Medium text */
+  --font-size-large: 24px;              /* Large text */
+  --font-size-xl: 32px;                 /* Extra-large text */
+  --font-size-xxl: 48px;                /* Double extra-large text */
+
+  /* Line Heights */
+  --line-height-xs: 1.2;                /* Extra small line height */
+  --line-height-small: 1.3;             /* Small line height */
+  --line-height-base: 1.5;              /* Base line height */
+  --line-height-large: 1.75;            /* Large line height */
+
+  /* Spacing and Padding */
+  --spacing-xs: 4px;                    /* Extra small spacing */
+  --spacing-small: 8px;                 /* Small spacing */
+  --spacing-medium: 16px;               /* Medium spacing */
+  --spacing-large: 24px;                /* Large spacing */
+  --spacing-xl: 32px;                   /* Extra-large spacing */
+  --spacing-xxl: 48px;                  /* Double extra-large spacing */
+
+  /* Border Radius */
+  --border-radius-small: 4px;           /* Small border radius */
+  --border-radius-medium: 8px;          /* Medium border radius */
+  --border-radius-large: 16px;          /* Large border radius */
+  --border-radius-full: 50%;            /* Full circle for round elements */
+
+  /* Box Shadows */
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);     /* Light shadow */
+  --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);    /* Medium shadow */
+  --shadow-heavy: 0 8px 16px rgba(0, 0, 0, 0.3);    /* Heavy shadow */
+
+  /* Transitions and Animations */
+  --transition-fast: 0.2s;              /* Fast transition */
+  --transition-medium: 0.5s;            /* Medium transition */
+  --transition-slow: 1s;                /* Slow transition */
+  --transition-ease: ease-in-out;       /* Standard easing function */
+
+  /* Z-Index Levels */
+  --z-index-base: 1;                    /* Base z-index */
+  --z-index-dropdown: 100;              /* Dropdowns */
+  --z-index-navbar: 1000;               /* Navbar */
+  --z-index-modal: 2000;                /* Modals */
+
+  /* Widths and Heights */
+  --max-width-container: 1200px;        /* Max width for main container */
+  --width-sidebar: 300px;               /* Sidebar width */
+
+  /* Font Families */
+  --font-family-base: 'Arial', sans-serif;          /* Base font family */
+  --font-family-heading: 'Helvetica Neue', sans-serif; /* Font family for headings */
+}
+
+/* Apply variables to elements */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+.section-container, .experience-section, .education-item, .publication, .award-item {
+  background-color: var(--secondary-bg-color);
+}
+
+.App {
+  background-color: var(--bg-color);
+}
+
+/* General Section Styling */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 50vh;
+  padding: var(--spacing-large);
+}
+
+/* Section-specific Styling */
+#home, #skills, #portfolio, #education {
+  background-color: var(--bg-color);
+}
+
+#about, #experience {
+  background-color: var(--secondary-bg-color);
+}
+
+
+/* Custom alignment for About section content */
+.centered-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;    /* align content block to the left */
+  justify-content: center;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.centered-section .interest-pills {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.centered-section .interest-pills li {
+  margin-bottom: var(--spacing-small);
+  display: flex;
+  align-items: center;
+}
+
+.centered-section .contact-info {
+  text-align: left;       /* left-align emails */
+  width: 100%;
+}
+
+
+
+
+.about-intro {
+  text-align: left;
+  max-width: 720px;
+  margin: 0 auto var(--spacing-large);
+}

@@ -1,0 +1,129 @@
+/* General Section Styling */
+.experience-section {
+  padding: var(--spacing-large);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: var(--border-radius-medium);
+  background-color: var(--secondary-bg-color);
+}
+
+.title-container h1 {
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: var(--spacing-xl);
+}
+
+.title-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto var(--spacing-xl);
+}
+
+/* Experience Content Layout */
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-large);
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Experience Details Card */
+.experience-details {
+  background-color: var(--secondary-bg-color);
+  /* padding: var(--spacing-small); */
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--shadow-medium);
+  text-align: left;
+  color: var(--text-color);
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: var(--spacing-medium);
+}
+
+/* Header Information (Position, Company, Duration, Logo) */
+.header-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-small);
+  margin-bottom: var(--spacing-medium);
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.position {
+  font-size: var(--font-size-medium);
+  font-weight: bold;
+}
+
+.company-name {
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+}
+
+.duration {
+  font-size: var(--font-size-small);
+  color: var(--muted-text-color);
+}
+
+/* Description and Task List Styling */
+.description {
+  margin: var(--spacing-medium) 0;
+}
+
+.tasks {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tasks li {
+  margin-bottom: var(--spacing-small);
+  display: flex;
+  align-items: center;
+}
+
+.tasks li::before {
+  content: '•';
+  color: var(--primary-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-right: var(--spacing-xs);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Stack header so logo is on top and centered (mobile) */
+  .experience-details { text-align: center; }
+  .header-info { 
+    flex-direction: column; 
+    align-items: center; 
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-small);
+  }
+  .company-logo { 
+    width: 56px;
+    height: 56px;
+    margin-bottom: var(--spacing-xs);
+  }
+  .position, .company-name, .duration { text-align: center; }
+
+  .title-container h1 {
+    font-size: var(--font-size-large);
+  }
+
+  .experience-section {
+    padding: var(--spacing-small);
+    color: var(--text-color);
+  }
+}

@@ -1,0 +1,105 @@
+/* Section container (keeps your existing look) */
+#projects {
+  padding: var(--spacing-large);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
+  text-align: center;
+  gap: var(--spacing-small);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+  max-width: 800px;  /* your preferred card width */
+  width: 100%;
+  align-items: stretch;
+}
+
+/* Media card layout: image left, text right */
+.projects-card {
+  background-color: var(--secondary-bg-color);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--shadow-medium);
+  width: 100%;
+  max-width: 100%;
+  padding: var(--spacing-medium);
+}
+
+.projects-card-media {
+  display: grid;
+  grid-template-columns: 300px 1fr; /* image column ~300px */
+  gap: var(--spacing-medium);
+  align-items: start;
+  text-align: left; /* keep inner text left-aligned */
+}
+
+/* Image column */
+.projects-media img {
+  width: 100%;
+  height: 100%;
+  max-height: 220px;        /* keeps the card compact */
+  object-fit: cover;        /* neat crop */
+  border-radius: var(--border-radius-medium);
+  display: block;
+}
+
+/* Text column */
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.projects-title {
+  font-size: var(--font-size-large);
+  margin: 0;
+  color: var(--text-color);
+}
+
+.projects-meta {
+  margin: 0;
+  font-size: var(--font-size-small);
+  color: var(--muted-text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.projects-meta .dot {
+  opacity: 0.6;
+}
+
+.projects-desc {
+  margin: 0;
+  font-size: var(--font-size-small);
+  color: var(--muted-text-color);
+  line-height: 1.55;
+}
+
+.projects-links {
+  margin-top: 4px;
+  font-size: var(--font-size-small);
+}
+
+/* Responsive: stack image on top for small screens */
+@media (max-width: 768px) {
+  .projects-card-media {
+    grid-template-columns: 1fr;  /* single column */
+    text-align: center;
+  }
+  .projects-content {
+    align-items: center;
+  }
+  .projects-media img {
+    max-height: 240px; /* give image a bit more height on mobile */
+  }
+  .projects-title,
+  .projects-meta,
+  .projects-desc {
+    text-align: center;
+  }
+}

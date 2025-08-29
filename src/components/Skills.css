@@ -1,0 +1,29 @@
+#skills {
+  padding: 2rem 1rem 2.5rem;
+  background: var(--secondary-bg-color);
+  color: var(--text-color);
+}
+
+/* Width handled here; height is set inline from JS */
+.skills-chart {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.35) inset;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .skills-chart { max-width: 800px; width: 100%; }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .skills-chart { max-width: 100%; }
+}
+/* Vertical label styling for echarts tree labels */
+.skills-chart .echarts-tree-label.vertical {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}

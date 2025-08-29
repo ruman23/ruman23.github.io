@@ -1,0 +1,72 @@
+/* Full-width wrapper, no visual styling */
+.footer {
+  width: 100%;
+  background: transparent;
+  margin-top: 0;         /* no gap above the footer */
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: var(--font-size-small);
+  color: var(--muted-text-color);
+}
+
+/* Constrained inner container (matches Skills/Education width) */
+.footer-inner {
+  max-width: 800px;      /* desktop cap */
+  width: 100%;
+  margin: 0 auto;        /* center */
+  margin-bottom: 5px;
+  background-color: var(--secondary-bg-color);
+  border-top: 1px solid var(--border-color);
+  padding: 0.75rem 1rem; /* compact vertical rhythm */
+  /* Optional cosmetics to echo Skills look: */
+  /* border-radius: 20px; */
+  /* box-shadow: 0 10px 40px rgba(0,0,0,0.35) inset; */
+    border-bottom: 2px solid var(--border-color);
+
+  /* Round top corners */
+  border-bottom-left-radius: var(--border-radius-medium);
+  border-bottom-right-radius: var(--border-radius-medium);
+}
+
+
+/* Constrained inner container (matches site container) */
+/* Constrained inner container: let the parent .container set width */
+.footer-inner {
+  max-width: 100%;         /* ← use the parent container’s width */
+  width: 100%;
+  margin: 0 auto 5px;
+  background-color: var(--secondary-bg-color);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+  border-bottom-left-radius: var(--border-radius-medium);
+  border-bottom-right-radius: var(--border-radius-medium);
+  padding: 0.75rem 1rem;   /* bring back padding */
+}
+
+/* Social icons inline & centered */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+.footer-social a {
+  color: var(--primary-color);
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social a:hover { color: var(--text-color); }
+.footer-social a svg { width: 18px; height: 18px; }
+
+/* Mobile: let the inner container go full width like Skills */
+@media (max-width: 640px) {
+  .footer-inner {
+    max-width: 100%;
+    padding: 0.75rem var(--spacing-medium);
+  }
+}

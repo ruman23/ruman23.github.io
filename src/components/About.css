@@ -1,0 +1,149 @@
+/* Global Reset for All Unordered Lists */
+.research-interests {
+  max-width: var(--max-width-container);
+  font-size: var(--font-size-medium);
+  color: var(--text-color);
+  line-height: var(--line-height-large);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.research-interests li {
+  padding: var(--spacing-small) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.research-interests li:last-child {
+  border-bottom: none;
+}
+
+
+/* About Section Styling */
+#about {
+  padding: var(--spacing-large);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
+  /* border-radius: var(--border-radius-medium); */
+}
+
+.highlighted-name {
+  font-size: 1.5em; /* Adjust as needed */
+  font-weight: bold;
+}
+
+
+/* Social Icons Styling */
+.social-icons {
+  display: flex;
+  gap: var(--spacing-medium);
+  margin-top: var(--spacing-small);
+  position: relative;
+}
+
+.social-icons li {
+  font-size: var(--font-size-xl);
+  margin: var(--spacing-medium);
+  position: relative;
+}
+
+.social-icons li a {
+  transition: color var(--transition-fast);
+}
+
+.social-icons li a:hover {
+  color: var(--text-color);
+}
+
+/* Tooltip styling */
+.social-icons li a::after {
+  content: attr(title); /* This will use the title attribute as tooltip text */
+  position: absolute;
+  bottom: 100%; /* Position tooltip above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--text-color);
+  color: var(--secondary-bg-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: var(--font-size-small);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.social-icons li a:hover::after {
+  opacity: 1;
+}
+
+
+/* Styling for clickable email */
+.clickable-email {
+  cursor: pointer;
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.clickable-email:hover {
+  color: var(--hover-color);
+}
+
+/* Styling for the copy confirmation message */
+.copy-message {
+  font-size: var(--font-size-small);
+  color: var(--text-color); /* Text color */
+  background-color: var(--bg-color); /* Background color for the success message */
+  margin-bottom: var(--spacing-small); /* Adds space below the message */
+  text-align: center;
+  font-weight: bold; /* Optional: make the message bold */
+  padding: 6px 12px; /* Padding for better spacing */
+  border-radius: 4px; /* Rounded corners */
+  display: inline-block; /* Makes the background color wrap around the text */
+}
+
+
+
+/* Responsive Adjustments for Mobile Screens */
+@media (max-width: 768px) {
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+  }
+
+  .social-icons li {
+    font-size: var(--font-size-large);
+  }
+}
+
+.interest-pill .icon {
+  margin-right: var(--spacing-medium);
+}
+
+.clickable-email {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-medium); /* space between icon and text */
+}
+
+/* Email row: icon + text side-by-side with gap */
+.contact-info p {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-medium);
+  margin: 0; /* keep tight */
+}
+
+/* Ensure the small icon aligns nicely */
+.contact-info .icon {
+  display: inline-flex;
+  line-height: 1;
+}

@@ -1,0 +1,88 @@
+/* Education Section Styling */
+#education {
+  padding: var(--spacing-large); /* Reduced padding for compact layout */
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: var(--secondary-bg-color); */
+  background-color: var(--secondary-bg-color);
+  /* border-radius: var(--border-radius-medium); */
+  text-align: center;
+  gap: var(--spacing-small); /* Small gap for a tighter layout */
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small); /* Reduced gap between items */
+  max-width: 800px;
+  width: 100%;
+  align-items: stretch;
+}
+
+/* Education Item Styling */
+.education-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs); /* Smaller gap for compactness */
+  padding: var(--spacing-small); /* Minimal padding */
+  background-color: var(--secondary-bg-color);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--shadow-medium);
+  width: 100%; /* Occupies container width */
+  max-width: 100%;
+}
+
+.education-logo {
+  width: 50px; /* Slightly reduced logo size */
+  height: 50px;
+  object-fit: contain;
+  border-radius: var(--border-radius-small);
+}
+
+.education-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxs); /* Minimal gap for compact text layout */
+  align-items: flex-start;
+}
+
+.education-details h3 {
+  font-size: var(--font-size-medium);
+  margin: 0;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.education-details .degree,
+.education-details .dates {
+  font-size: var(--font-size-small);
+  color: var(--muted-text-color);
+  margin: 0;
+  text-align: left;
+}
+
+/* Responsive Adjustments for Mobile Screens */
+@media (max-width: 768px) {
+  .education-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .education-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .education-details {
+    align-items: center;
+  }
+
+  .education-details h3,
+  .education-details .degree,
+  .education-details .dates {
+    text-align: center;
+  }
+}

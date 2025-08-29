@@ -1,0 +1,122 @@
+/* General styling for navigation container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-medium);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: var(--z-index-navbar);
+  height: 60px;
+}
+
+/* Hamburger Icon - Hidden by default for PC view */
+.hamburger {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+  z-index: var(--z-index-navbar + 1); /* Ensures it stays above everything */
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual navigation items */
+.nav-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: var(--spacing-small);
+  cursor: pointer;
+}
+
+.nav-item li {
+  margin-left: var(--spacing-small);
+  font-weight: bold;
+  color: var(--text-color);
+  transition: color var(--transition-fast) ease;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.nav-item li:hover {
+  color: var(--primary-color);
+}
+
+/* Style for the progress icons */
+.progress-icon {
+  margin-right: var(--spacing-small);
+  text-align: center;
+  cursor: pointer;
+}
+
+.progress-icon svg {
+  fill: var(--text-color);
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  /* Show hamburger and cross only on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 70px;
+    padding: var(--spacing-small) var(--spacing-medium);
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--spacing-medium) 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: left;
+    padding: var(--spacing-small) var(--spacing-medium);
+  }
+
+  /* Adjust the positioning of the icons */
+  .progress-icon {
+    margin-right: var(--spacing-small);
+    text-align: left;
+    cursor: pointer;
+  }
+}
