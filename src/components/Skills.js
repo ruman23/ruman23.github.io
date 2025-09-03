@@ -22,22 +22,52 @@ export default function Skills() {
           { name: 'JavaScript', level: 'Familiar' },
         ],
       },
+
       {
-        name: 'Machine Learning & AI',
-        children: [{ name: 'TensorFlow' }, { name: 'PyTorch' }, { name: 'Scikit-learn' }, { name: 'OpenCV' }],
-      },
-      {
-        name: 'Development Tools & Platforms',
-        children: [{ name: 'Git' }, { name: 'Docker' }, { name: 'Jupyter Notebook' }, { name: 'Linux' }, { name: 'Windows' }, { name: 'macOS' }],
-      },
-      {
-        name: 'Databases',
-        children: [{ name: 'MySQL', level: 'Proficient' }, { name: 'MongoDB', level: 'Familiar' }],
-      },
-      {
-        name: 'Collaboration & PM',
-        children: [{ name: 'Jira' }, { name: 'Slack' }],
-      },
+      name: 'Languages',
+      children: [
+        { name: 'Python' },
+        { name: 'C++' },
+        { name: 'Swift' },
+        { name: 'ReactJS' }
+      ],
+    },
+    {
+      name: 'Frameworks & Tools',
+      children: [
+        { name: 'Git' },
+        { name: 'Conda' },
+        { name: 'Agile (Scrum/Kanban)' },
+        { name: 'Jira' },
+        { name: 'Confluence' }
+      ],
+    },
+    {
+      name: 'Domains',
+      children: [
+        { name: 'Networking & Real-Time Systems' },
+        { name: 'Artificial Intelligence' },
+        { name: 'Machine Learning' }
+      ],
+    },
+    {
+      name: 'Databases',
+      children: [
+        { name: 'MongoDB' },
+        { name: 'Firebase' },
+        { name: 'MySQL' }
+      ],
+    },
+    {
+      name: 'Platforms',
+      children: [
+        { name: 'Linux' },
+        { name: 'iOS Development' },
+        { name: 'Raspberry Pi' },
+        { name: 'NVIDIA Jetson Orin Nano' },
+        { name: 'Embedded Systems' }
+      ],
+    }
     ],
   };
   if (includeRobotics) {
