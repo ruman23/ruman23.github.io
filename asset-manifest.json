@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e8849de5.css",
-    "main.js": "/static/js/main.06435672.js",
+    "main.js": "/static/js/main.25ccf830.js",
     "static/media/proj_yolo.png": "/static/media/proj_yolo.fc633ebd2221c15b2921.png",
     "static/media/proj_kohls.png": "/static/media/proj_kohls.575c1199946b48f1578f.png",
     "static/media/proj_autonomous.png": "/static/media/proj_autonomous.d03cdc57a55d5e4e14b9.png",
@@ -11,10 +11,10 @@
     "static/media/sust_logo.png": "/static/media/sust_logo.eeb63bc8228b6913d740.png",
     "index.html": "/index.html",
     "main.e8849de5.css.map": "/static/css/main.e8849de5.css.map",
-    "main.06435672.js.map": "/static/js/main.06435672.js.map"
+    "main.25ccf830.js.map": "/static/js/main.25ccf830.js.map"
   },
   "entrypoints": [
     "static/css/main.e8849de5.css",
-    "static/js/main.06435672.js"
+    "static/js/main.25ccf830.js"
   ]
 }
