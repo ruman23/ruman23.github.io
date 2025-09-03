@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.e8849de5.css",
-    "main.js": "/static/js/main.25ccf830.js",
+    "main.js": "/static/js/main.39cfe2a8.js",
     "static/media/proj_yolo.png": "/static/media/proj_yolo.fc633ebd2221c15b2921.png",
     "static/media/proj_kohls.png": "/static/media/proj_kohls.575c1199946b48f1578f.png",
     "static/media/proj_autonomous.png": "/static/media/proj_autonomous.d03cdc57a55d5e4e14b9.png",
-    "static/media/cv.pdf": "/static/media/cv.8bbb574773ec9f39de7c.pdf",
+    "static/media/Md_Ruman_Islam_CV.pdf": "/static/media/Md_Ruman_Islam_CV.71bf9d2f265ab8b221ed.pdf",
     "static/media/uno_logo.png": "/static/media/uno_logo.a653f4c8e13b53f5aa80.png",
     "static/media/samsung_logo.png": "/static/media/samsung_logo.27a04fee8d4a4d941f86.png",
     "static/media/sust_logo.png": "/static/media/sust_logo.eeb63bc8228b6913d740.png",
     "index.html": "/index.html",
     "main.e8849de5.css.map": "/static/css/main.e8849de5.css.map",
-    "main.25ccf830.js.map": "/static/js/main.25ccf830.js.map"
+    "main.39cfe2a8.js.map": "/static/js/main.39cfe2a8.js.map"
   },
   "entrypoints": [
     "static/css/main.e8849de5.css",
-    "static/js/main.25ccf830.js"
+    "static/js/main.39cfe2a8.js"
   ]
 }
