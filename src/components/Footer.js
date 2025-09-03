@@ -1,7 +1,7 @@
 // Footer.js
 import React from "react";
 import "./Footer.css";
-import cv from "../assets/cv.pdf";
+import cv from "../assets/Md_Ruman_Islam_CV.pdf";
 import { FaLinkedin, FaGithub, FaGitlab, FaGoogleScholar } from "react-icons/fa6";
 import { ImProfile } from "react-icons/im";
 

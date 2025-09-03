@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './About.css';
-import cv from '../assets/cv.pdf';
+import cv from '../assets/Md_Ruman_Islam_CV.pdf';
 import {
   FaLinkedin,
   FaGithub,
@@ -11,6 +11,10 @@ import {
   FaServer,
   FaEnvelope
 } from 'react-icons/fa6';
+
+import { FaShieldAlt, FaProjectDiagram, FaMicrochip } from 'react-icons/fa';
+
+
 import { ImProfile } from 'react-icons/im';
 
 function About() {
@@ -26,30 +30,33 @@ function About() {
     <section id="about" aria-labelledby="about-heading">
       {/* <h1 id="about-heading">About</h1> */}
       <p className="about-intro">
-        <span className="highlighted-name">Md Ruman Islam</span> is a Ph.D. student in Computing &amp; Information Science at the
-        &nbsp;<a href="https://www.unomaha.edu" target="_blank" rel="noopener noreferrer">University of Nebraska Omaha</a>, advised by
-        &nbsp;<a href="https://unocps.github.io" target="_blank" rel="noopener noreferrer">Dr. Pei‑Chi Huang</a>.
-        His research focuses on the intersection of <strong>cybersecurity</strong>, <strong>cyber‑physical systems</strong>, and
-        <strong> machine learning</strong>. Previously, he worked as a Software Engineer at
+        <span className="highlighted-name">Md Ruman Islam</span> is a Ph.D. student in Computing &amp; Information Science at the 
+        &nbsp;<a href="https://www.unomaha.edu" target="_blank" rel="noopener noreferrer">University of Nebraska Omaha</a>, 
+        advised by &nbsp;<a href="https://unocps.github.io" target="_blank" rel="noopener noreferrer">Dr. Pei-Chi Huang</a>. 
+        His work bridges <strong>cybersecurity</strong>, <strong>cyber-physical systems</strong>, and <strong>machine learning</strong>, 
+        with applications in <strong>real-time networking</strong>, <strong>autonomous systems</strong>, and <strong>intelligent infrastructure</strong>. 
+        Previously, he was a Software Engineer at 
         &nbsp;<a href="https://research.samsung.com/srbd" target="_blank" rel="noopener noreferrer">Samsung R&amp;D Institute Bangladesh</a>.
       </p>
 
+
       <div className="centered-section">
         <h2>Research Interests</h2>
-        <ul className="interest-pills" role="list">
-          <li className="interest-pill">
-            <span className="icon" aria-hidden="true"><FaLock /></span>
-            <span className="label">Network Security and Privacy</span>
-          </li>
-          <li className="interest-pill">
-            <span className="icon" aria-hidden="true"><FaNetworkWired /></span>
-            <span className="label">AI/ML in Networking Systems</span>
-          </li>
-          <li className="interest-pill">
-            <span className="icon" aria-hidden="true"><FaServer /></span>
-            <span className="label">Real-Time and Cyber-Physical Systems</span>
-          </li>
-        </ul>
+          <ul className="interest-pills" role="list">
+            <li className="interest-pill">
+              <span className="icon" aria-hidden="true"><FaShieldAlt /></span>
+              <span className="label">Network Security and Privacy</span>
+            </li>
+            <li className="interest-pill">
+              <span className="icon" aria-hidden="true"><FaProjectDiagram /></span>
+              <span className="label">AI/ML in Networking Systems</span>
+            </li>
+            <li className="interest-pill">
+              <span className="icon" aria-hidden="true"><FaMicrochip /></span>
+              <span className="label">Real-Time and Cyber-Physical Systems</span>
+            </li>
+          </ul>
+
 
 
         <h2>Contact</h2>
